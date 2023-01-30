@@ -10,8 +10,8 @@ public class GetKittensTest2 {
     @Test
     public void ReturnKittensTest() {
         Feline feline = new Feline();
-         int actualKittens = feline.getKittens();
-         int expectedKittens = 1;
-        assertEquals(expectedKittens,actualKittens);
+        int actualKittens = feline.getKittens();
+        int expectedKittens = 1;
+        assertEquals(expectedKittens, actualKittens);
     }
 }

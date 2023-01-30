@@ -22,6 +22,6 @@ public class LionGetFoodTest2 {
         Lion lion = new Lion(feline); // //создали объект с этой зависимым моком
         Mockito.when(feline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         System.out.println(lion.getFood());
-        Assert.assertEquals(List.of("Животные", "Птицы", "Рыба"), lion.getFood());
+        Assert.assertEquals("Fail, please try again",List.of("Животные", "Птицы", "Рыба"), lion.getFood());
     }
 }
