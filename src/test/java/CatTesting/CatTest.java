@@ -3,13 +3,12 @@ package CatTesting;
 import com.example.Cat;
 import com.example.Predator;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 public class CatTest {
-
-
     @Test
-public void catGetFood(){
+    public void catGetFood() {
         ///Arrange
         Predator predator;
         Cat cat = new Cat(null);
@@ -19,7 +18,7 @@ public void catGetFood(){
         String actualSound = cat.getSound();
 
         ///Assert
-        assertEquals(expectedSound,actualSound);
+        assertEquals(expectedSound, actualSound);
     }
 
 

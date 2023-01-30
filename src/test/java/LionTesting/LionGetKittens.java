@@ -19,7 +19,7 @@ public class LionGetKittens {
     public void TestLionKittens(){
         Lion lion = new Lion(feline);
         Mockito.when(feline.getKittens()).thenReturn(1);
-        Assert.assertEquals(1,lion.getKittens());
+        Assert.assertEquals("Fail, please try again",1,lion.getKittens());
     }
 
 }

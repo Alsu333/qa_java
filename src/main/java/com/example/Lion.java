@@ -20,7 +20,6 @@ public class Lion {
     public Lion(IFeline felineInter){ // внедрение зависимости через конструктор
         this.felineInter = felineInter; // объект попадает в переменную класса
     }
-    //Feline feline = new Feline();
 
     public int getKittens() {
 
@@ -31,7 +30,6 @@ public class Lion {
 
         return hasMane;
     }
-
     public List<String> getFood() throws Exception {
         return felineInter.getFood("Хищник");
     }

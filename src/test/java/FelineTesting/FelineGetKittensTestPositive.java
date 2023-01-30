@@ -5,13 +5,13 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class GetKittensTest2 {
+public class FelineGetKittensTestPositive {
 
     @Test
-    public void ReturnKittensTest() {
+    public void FelineGetKittensTest() {
         Feline feline = new Feline();
         int actualKittens = feline.getKittens();
         int expectedKittens = 1;
-        assertEquals(expectedKittens, actualKittens);
+        assertEquals("Fail, please try again",expectedKittens, actualKittens);
     }
 }

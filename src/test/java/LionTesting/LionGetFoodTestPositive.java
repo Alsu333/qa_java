@@ -12,12 +12,12 @@ import java.util.List;
 
 
 @RunWith(MockitoJUnitRunner.class)
-public class LionGetFoodTest2 {
+public class LionGetFoodTestPositive {
     @Mock
     IFeline feline; //создали мок класса Feline который описывает интерфейс IFeline
 
     @Test
-    public void LionGetFoodTest2() throws Exception {
+    public void LionGetFoodTest() throws Exception {
 
         Lion lion = new Lion(feline); // //создали объект с этой зависимым моком
         Mockito.when(feline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));

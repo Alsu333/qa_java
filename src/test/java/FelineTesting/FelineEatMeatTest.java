@@ -1,17 +1,18 @@
 package FelineTesting;
+
 import com.example.Feline;
 import org.junit.Assert;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class FelineEatMeatTest {
     @Test
-    public void Test(){
+    public void Test() {
         //Arrange
-    Feline feline = new Feline();
+        Feline feline = new Feline();
         List<String> actual = null;
         try {
             actual = feline.eatMeat();
@@ -20,10 +21,10 @@ public class FelineEatMeatTest {
         }
 
         ///Act
-    List<String> expected = new ArrayList<>();
-    expected.add("Животные");
-    expected.add("Птицы");
-    expected.add("Рыба");
-    Assert.assertEquals(expected,actual);
-}
+        List<String> expected = new ArrayList<>();
+        expected.add("Животные");
+        expected.add("Птицы");
+        expected.add("Рыба");
+        Assert.assertEquals(expected, actual);
+    }
 }

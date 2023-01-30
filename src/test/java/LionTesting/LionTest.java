@@ -22,7 +22,7 @@ public class LionTest { // создали тестовый класс
         this.hasMane = hasMane;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "{index}: sex({0})={1}")
     public static Object[] getSumData() { // передали тестовые данные
         return new Object[][]{
                 {"Самец", true},
