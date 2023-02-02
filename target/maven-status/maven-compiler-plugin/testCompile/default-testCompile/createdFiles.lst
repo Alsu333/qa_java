@@ -1,0 +1,9 @@
+cats\CatTestMock.class
+cats\CatTest.class
+lions\LionGetFoodNegativeTest.class
+lions\LionGetFoodTest.class
+felines\FelineGetKittensArgumentTest.class
+felines\FelineGetKittensTest.class
+felines\FelineGetFamilyTest.class
+felines\FelineEatMeatTest.class
+lions\LionTest.class
